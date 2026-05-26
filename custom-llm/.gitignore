@@ -1,0 +1,62 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+*.egg
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints*
+
+# Training artifacts
+**/checkpoint*/
+**/adapter/
+**/merged-model/
+**/merged/
+**/model-fp32/
+
+# Generated data
+**/generated/
+
+# Output directories
+**/output-*/
+
+# Generated model config files (from save_pretrained in output dirs)
+**/checkpoint*/config.json
+**/checkpoint*/generation_config.json
+**/checkpoint*/tokenizer.json
+**/checkpoint*/tokenizer_config.json
+**/adapter/config.json
+**/adapter/generation_config.json
+**/merged/config.json
+**/merged/generation_config.json
+**/merged/tokenizer.json
+**/merged/tokenizer_config.json
+**/merged-model/config.json
+**/merged-model/generation_config.json
+
+# Model files (large binaries)
+*.bin
+*.safetensors
+*.gguf
+*.onnx
+*.pt
+*.pth
+!requirements.txt
+
+# Environment
+.env
+.venv/
+venv/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
